@@ -7,8 +7,16 @@ loginForm.addEventListener("submit", (e) => {
     e.target.elements.password.value
   );
   user.saveSession();
-  const trip = new tripInfo("2021-06-08", "2021-06-09", "TR-013");
-  trip.getTrips();
+  const trip = new Trip("2021-06-08", "2021-06-09", "TR-013");
+  trip.getTrips()
+  .then(data=>{
+    if(data.status == 401){
+      alert("Usuario o contraseña incorrectos");
+    }else{
+      window.location="/data";
+    }
+  });
+  
 });
 
 class Credentials {

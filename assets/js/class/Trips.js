@@ -24,8 +24,8 @@ class Trip {
     };
 
     let trips= await fetch(url, options)
-      .then((response) => response.json())
-      .then((json) => {
+      .then(response => response.json())
+      .then(json => {
         return json;
       })
       .catch((error) => {
