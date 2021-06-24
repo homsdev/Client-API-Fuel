@@ -6,6 +6,7 @@ $colors: (
   focus: #fe7158,
   light: #55c0ea,
   focus-light: lighten(#fe7158, 10%),
+  primary-dark: darken(#324a5e,10%)
 );
 
 @function color($colorscheme) {
@@ -227,6 +228,15 @@ $colors: (
     }
 
     tbody {
+      .odd{
+        background-color: color(primary);
+        color: color(blanck);
+      }
+      
+      .even{
+        background-color: color(primary-dark);
+        color: color(blanck);
+      }
       tr {
         td {
           padding: 1em 2em;

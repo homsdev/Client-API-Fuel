@@ -12,6 +12,7 @@
     <meta name="keywords" content="Fuel, Automobile, API, Astus" />
     <title>Fuel</title>
     <link rel="stylesheet" href="/assets/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css">
     <link rel="stylesheet" href="/assets/css/main.css" />
   </head>
   <body class="data">
@@ -30,9 +31,10 @@
               <option value="TR-015">TR-015</option>
           </select>
           <button id="btnSearch">Mostrar</button>
+          <button id="btnExcel">Excel</button>
         </div>
       </div>
-      <table class="datatable-body" >
+      <table class="datatable-body" id="tripsTable">
         <thead>
           <tr>
             <th>Conductor</th>
@@ -44,13 +46,12 @@
             <th>Hora Inicio</th>
             <th>Hora Fin</th>
             <th>Duración</th>
-            <th>Nota</th>
           </tr>
         </thead>
-        <tbody id="dataTrips">  
-        </tbody>
+        <!-- <tbody id="dataTrips">  
+        </tbody> -->
       </table>
-      <div class="datatable-footer">
+      <!-- <div class="datatable-footer">
         <div class="list-items">
           show
           <select name="" id="">
@@ -71,8 +72,19 @@
             <li><button>10</button></li>
           </ul>
         </div>
-      </div>
+      </div> -->
     </div>
+    <script
+			  src="https://code.jquery.com/jquery-3.6.0.min.js"
+			  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			  crossorigin="anonymous"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script>
+    <script src="/assets/libs/data-tables-buttons.js"></script>
+    <script src="/assets/libs/jsZip.js"></script>
+    <script src="/assets/libs/pdfMake.js"></script>
+    <script src="/assets/libs/vsf_fonts.js"></script>
+    <script src="/assets/libs/html5-plugin.js"></script>
+    <script src="/assets/libs/buttons-plugin.js"></script>
     <script src="/assets/js/class/Trips.js"></script>
     <script src="/assets/js/appTrips.js"></script>
   </body>
