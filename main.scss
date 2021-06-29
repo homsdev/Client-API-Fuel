@@ -6,7 +6,7 @@ $colors: (
   focus: #fe7158,
   light: #55c0ea,
   focus-light: lighten(#fe7158, 10%),
-  primary-dark: darken(#324a5e,10%)
+  primary-dark: darken(#324a5e, 10%),
 );
 
 @function color($colorscheme) {
@@ -146,16 +146,15 @@ $colors: (
 .material-icons {
   font-size: 16px;
 }
-
 .datatable {
   &-container {
     font-family: "Noto Sans", sans-serif;
     background-color: color(primary);
     border-radius: 3px;
     color: color(blanck);
-    width: 1250px;
+    width: 98%;
     margin: {
-      top: 30px;
+      top: 10px;
       left: auto;
       right: auto;
       bottom: 0;
@@ -228,12 +227,12 @@ $colors: (
     }
 
     tbody {
-      .odd{
+      .odd {
         background-color: color(primary);
         color: color(blanck);
       }
-      
-      .even{
+
+      .even {
         background-color: color(primary-dark);
         color: color(blanck);
       }
@@ -292,4 +291,49 @@ $colors: (
       }
     }
   }
+}
+
+.dt-buttons {
+  display: flex;
+  button {
+    @include datatableBtn();
+    margin-right: 5px;
+  }
+}
+
+
+
+.dataTable {
+  margin: 0;
+  width: 100%;
+}
+
+.dataTables {
+  &_filter {
+    label {
+      color: color(blanck);
+    }
+  }
+
+  &_wrapper {
+    padding: 10px;
+  }
+
+  &_info {
+    color: color(blanck);
+  }
+
+  &_paginate{
+    a{
+      color: color(blanck);
+    }
+  }
+}
+
+.dataTables_wrapper .dataTables_length,
+.dataTables_wrapper .dataTables_filter,
+.dataTables_wrapper .dataTables_info,
+.dataTables_wrapper .dataTables_processing,
+.dataTables_wrapper .dataTables_paginate {
+  color: color(blanck);
 }

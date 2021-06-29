@@ -19,19 +19,46 @@
     <div class="datatable-container">
       <div class="datatable-header">
         <div class="search">
-          <input type="text" name="" id="" class="search-input" />
           <label for="fromDate">Desde</label>
           <input type="date" name="fromDate" id="fromDate" required>
           <label for="toDate">Hasta</label>
           <input type="date" name="toDate" id="toDate" required>
           <label for="carName">Vehículo</label>
           <select name="carName" id="carName" required>
-              <option value="TR-013">TR-013</option>
-              <option value="TR-014">TR-014</option>
-              <option value="TR-015">TR-015</option>
+            <option value="TR-001">TR-001</option>
+            <option value="TR-002">TR-002</option>
+            <option value="TR-003">TR-003</option>
+            <option value="TR-004">TR-004</option>
+            <option value="TR-005">TR-005</option>
+            <option value="TR-006">TR-006</option>
+            <option value="TR-007">TR-007</option>
+            <option value="TR-008">TR-008</option>
+            <option value="TR-009">TR-009</option>
+            <option value="TR-010">TR-010</option>
+            <option value="TR-011">TR-011</option>
+            <option value="TR-012">TR-012</option>
+            <option value="TR-013">TR-013</option>  
+            <option value="TR-014">TR-014</option>
+            <option value="TR-015">TR-015</option>
+            <option value="TR-016">TR-016</option>
+            <option value="TR-017">TR-017</option>
+            <option value="TR-018">TR-018</option>
+            <option value="TR-019">TR-019</option>
+            <option value="TR-020">TR-020</option>
+            <option value="TR-021">TR-021</option>
+            <option value="TR-022">TR-022</option>
+            <option value="TR-023">TR-023</option>
+            <option value="TR-024">TR-024</option>
+            <option value="TR-025">TR-025</option>
+            <option value="TR-026">TR-026</option>
+            <option value="TR-027">TR-027</option>
+            <option value="TR-028">TR-028</option>
+            <option value="TR-029">TR-029</option>  
+            <option value="TR-030">TR-030</option>
+            <option value="TR-031">TR-031</option>
+            <option value="TR-032">TR-032</option>
           </select>
           <button id="btnSearch">Mostrar</button>
-          <button id="btnExcel">Excel</button>
         </div>
       </div>
       <table class="datatable-body" id="tripsTable">
@@ -46,33 +73,11 @@
             <th>Hora Inicio</th>
             <th>Hora Fin</th>
             <th>Duración</th>
+            <th>Litros/Km</th>
           </tr>
         </thead>
-        <!-- <tbody id="dataTrips">  
-        </tbody> -->
+      
       </table>
-      <!-- <div class="datatable-footer">
-        <div class="list-items">
-          show
-          <select name="" id="">
-            <option value="">5</option>
-            <option value="">10</option>
-            <option value="">15</option>
-          </select>
-          entries
-        </div>
-        <div class="pages">
-          <ul>
-            <li><span class="active">1</span></li>
-            <li><button>2</button></li>
-            <li><button>3</button></li>
-            <li><button>4</button></li>
-            <li><button>...</button></li>
-            <li><button>9</button></li>
-            <li><button>10</button></li>
-          </ul>
-        </div>
-      </div> -->
     </div>
     <script
 			  src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -81,7 +86,6 @@
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script>
     <script src="/assets/libs/data-tables-buttons.js"></script>
     <script src="/assets/libs/jsZip.js"></script>
-    <script src="/assets/libs/pdfMake.js"></script>
     <script src="/assets/libs/vsf_fonts.js"></script>
     <script src="/assets/libs/html5-plugin.js"></script>
     <script src="/assets/libs/buttons-plugin.js"></script>
